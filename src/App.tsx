@@ -413,6 +413,7 @@ function LandingPage({
                         <label className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Full Name</label>
                         <input 
                           type="text" 
+                          name="name"
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -424,6 +425,7 @@ function LandingPage({
                         <label className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Business Email</label>
                         <input 
                           type="email" 
+                          name="email"
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -434,6 +436,7 @@ function LandingPage({
                       <div className="space-y-2">
                         <label className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Message</label>
                         <textarea 
+                          name="message"
                           required
                           rows={4}
                           value={formData.message}
@@ -509,26 +512,29 @@ export default function App() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('loading');
 
+    const form = e.currentTarget;
+    const formDataObj = new FormData(form);
+    formDataObj.append("access_key", "eb12df14-8693-4922-ab09-602a762df0ac");
+
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataObj
       });
 
       const data = await response.json();
 
-      if (response.ok) {
+      if (data.success) {
         setStatus('success');
-        setStatusMessage(data.message);
+        setStatusMessage("Thank you! Your message has been sent successfully.");
         setFormData({ name: '', email: '', message: '' });
       } else {
         setStatus('error');
-        setStatusMessage(data.error || 'Something went wrong.');
+        setStatusMessage(data.message || 'Something went wrong.');
       }
     } catch (error) {
       setStatus('error');
