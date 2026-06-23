@@ -9,6 +9,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import Disclaimer from './components/Disclaimer';
+import FAQ from './components/FAQ';
+import EmailVerificationGuide from './components/EmailVerificationGuide';
+import CatchAllEmailGuide from './components/CatchAllEmailGuide';
+import BivolVsAutomatedTools from './components/BivolVsAutomatedTools';
 import { 
   ShieldCheck, 
   Users, 
@@ -26,9 +30,8 @@ import {
   AlertCircle
 } from 'lucide-react';
 
-const FadeIn = ({ children, delay = 0, key }: { children: React.ReactNode; delay?: number, key?: any }) => (
+const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number; key?: React.Key }) => (
   <motion.div
-    key={key}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
@@ -484,6 +487,10 @@ function LandingPage({
             <span className="font-serif font-bold text-lg">Bivol.xyz</span>
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+            <Link to="/bivol-vs-automated-tools" className="hover:text-gold transition-colors">Bivol vs Automated</Link>
+            <Link to="/email-verification-guide" className="hover:text-gold transition-colors">Verification Guide</Link>
+            <Link to="/catch-all-email-guide" className="hover:text-gold transition-colors">Catch-All Guide</Link>
+            <Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link>
             <Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>
             <Link to="/disclaimer" className="hover:text-gold transition-colors">Disclaimer</Link>
@@ -561,6 +568,10 @@ export default function App() {
               />
             } 
           />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/email-verification-guide" element={<EmailVerificationGuide />} />
+          <Route path="/catch-all-email-guide" element={<CatchAllEmailGuide />} />
+          <Route path="/bivol-vs-automated-tools" element={<BivolVsAutomatedTools />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
