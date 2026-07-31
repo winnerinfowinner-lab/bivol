@@ -1,0 +1,20 @@
+{
+  "email-verification": {
+    "name": "email-verification",
+    "count": 12,
+    "posts": [
+      "zero-bounce-rate-email-verification",
+      "syntax-email-validation-nodejs",
+      "smtp-handshake-email-verification",
+      "shopify-guide",
+      "real-time-email-verification-api",
+      "mx-record-email-validation-api",
+      "free-bulk-email-bounce-checker",
+      "disposable-email-address-blocker-api",
+      "catch-all-guide",
+      "catch-all-email-verification-tool",
+      "bulk-email-verifier-for-cold-outreach",
+      "b2b-email-validation-service"
+    ]
+  }
+}

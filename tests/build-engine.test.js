@@ -1,0 +1,115 @@
+import { describe, it, expect, beforeAll } from 'vitest';
+import fs from 'fs';
+import path from 'path';
+import { buildSEOEngine } from '../scripts/build-seo.js';
+
+describe('SEO Build Engine (Step 4)', () => {
+  let result;
+  const manifestPath = path.resolve(process.cwd(), 'public/content-manifest.json');
+  const cachePath = path.resolve(process.cwd(), '.cache/build-index.json');
+  const categoriesPath = path.resolve(process.cwd(), 'public/categories.json');
+  const tagsPath = path.resolve(process.cwd(), 'public/tags.json');
+  const sitemapPath = path.resolve(process.cwd(), 'public/sitemap.xml');
+  const rssPath = path.resolve(process.cwd(), 'public/rss.xml');
+  const robotsPath = path.resolve(process.cwd(), 'public/robots.txt');
+  const llmsPath = path.resolve(process.cwd(), 'public/llms.txt');
+  const redirectsPath = path.resolve(process.cwd(), 'public/_redirects');
+  const promptPath = path.resolve(process.cwd(), 'prompts/batch-content-generator.md');
+  const templatePath = path.resolve(process.cwd(), 'src/templates/ArticleTemplate.tsx');
+
+  beforeAll(() => {
+    // Run the build engine before tests
+    result = buildSEOEngine();
+  });
+
+  it('should generate content-manifest.json and cache file', () => {
+    expect(fs.existsSync(manifestPath)).toBe(true);
+    expect(fs.existsSync(cachePath)).toBe(true);
+    expect(fs.existsSync(categoriesPath)).toBe(true);
+    expect(fs.existsSync(tagsPath)).toBe(true);
+  });
+
+  it('should accurately parse frontmatter from shopify-guide.md', () => {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    expect(manifest.totalArticles).toBeGreaterThanOrEqual(2);
+
+    const article = manifest.articles.find((a) => a.slug === 'shopify-guide');
+    expect(article).toBeDefined();
+    expect(article.title).toBe('How to Verify Shopify Customer Emails & Prevent Fake Orders in 2026');
+    expect(article.category).toBe('email-verification');
+    expect(article.tags).toContain('shopify');
+    expect(article.tags).toContain('email-validation');
+    expect(article.targetKeyword).toBe('shopify customer email verification');
+    expect(article.author).toBe('Bivol Engineering Team');
+    expect(article.schemaType).toBe('TechArticle');
+    expect(article.dynamicFAQs.length).toBe(3);
+    expect(article.redirects).toContain('/blog/shopify-verification-guide');
+  });
+
+  it('should compute dynamic metrics wordCount and readingTime', () => {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    const article = manifest.articles.find((a) => a.slug === 'shopify-guide');
+
+    expect(typeof article.wordCount).toBe('number');
+    expect(article.wordCount).toBeGreaterThan(50);
+    expect(typeof article.readingTime).toBe('number');
+    expect(article.readingTime).toBeGreaterThanOrEqual(1);
+    expect(article.lastmod).toBeDefined();
+  });
+
+  it('should compute weighted internal link scoring (relatedPosts)', () => {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    const shopifyGuide = manifest.articles.find((a) => a.slug === 'shopify-guide');
+
+    expect(Array.isArray(shopifyGuide.relatedPosts)).toBe(true);
+    expect(shopifyGuide.relatedPosts.length).toBeGreaterThan(0);
+
+    const relatedItem = shopifyGuide.relatedPosts[0];
+    expect(typeof relatedItem.slug).toBe('string');
+    expect(relatedItem.score).toBeGreaterThanOrEqual(50);
+  });
+
+  it('should generate valid sitemap.xml', () => {
+    expect(fs.existsSync(sitemapPath)).toBe(true);
+    const content = fs.readFileSync(sitemapPath, 'utf-8');
+    expect(content).toContain('<?xml version="1.0" encoding="UTF-8"?>');
+    expect(content).toContain('<urlset');
+    expect(content).toContain('https://bivol.xyz/en/email-verification/shopify-guide');
+    expect(content).toContain('https://bivol.xyz/en/email-verification/catch-all-guide');
+  });
+
+  it('should generate valid rss.xml', () => {
+    expect(fs.existsSync(rssPath)).toBe(true);
+    const content = fs.readFileSync(rssPath, 'utf-8');
+    expect(content).toContain('<rss version="2.0"');
+    expect(content).toContain('How to Verify Shopify Customer Emails');
+  });
+
+  it('should generate valid robots.txt', () => {
+    expect(fs.existsSync(robotsPath)).toBe(true);
+    const content = fs.readFileSync(robotsPath, 'utf-8');
+    expect(content).toContain('User-agent: *');
+    expect(content).toContain('Sitemap: https://bivol.xyz/sitemap.xml');
+  });
+
+  it('should generate valid llms.txt for AI crawlers', () => {
+    expect(fs.existsSync(llmsPath)).toBe(true);
+    const content = fs.readFileSync(llmsPath, 'utf-8');
+    expect(content).toContain('Bivol Technical Engineering');
+    expect(content).toContain('shopify-guide');
+  });
+
+  it('should generate valid _redirects for Cloudflare Pages', () => {
+    expect(fs.existsSync(redirectsPath)).toBe(true);
+    const content = fs.readFileSync(redirectsPath, 'utf-8');
+    expect(content).toContain('/blog/shopify-verification-guide /en/email-verification/shopify-guide 301');
+  });
+
+  it('should verify Step 4 artifacts exist (prompt and ArticleTemplate)', () => {
+    expect(fs.existsSync(promptPath)).toBe(true);
+    expect(fs.existsSync(templatePath)).toBe(true);
+    const promptContent = fs.readFileSync(promptPath, 'utf-8');
+    expect(promptContent).toContain('Master Batch Content Generation Prompt');
+    expect(promptContent).toContain('dynamicFAQs');
+  });
+});

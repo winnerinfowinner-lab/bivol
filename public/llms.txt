@@ -1,0 +1,78 @@
+# Bivol Technical Engineering & Email Architecture Documentation
+
+> High-performance technical articles and guides on email deliverability, DNS security (SPF, DKIM, DMARC), and programmatic verification infrastructure.
+
+## Technical Knowledge Index
+
+### [Zero Bounce Rate Email Verification: Strategies for 99%+ Deliverability](https://bivol.xyz/en/email-verification/zero-bounce-rate-email-verification)
+- **Category:** email-verification
+- **Summary:** Achieve zero bounce rate email verification with multi-tier list cleaning, aggressive safety thresholds, and domain reputation protection.
+- **Target Keyword:** zero bounce rate email verification
+- **Published:** 2026-07-22
+
+### [Syntax Email Validation in Node.js: RFC Standards & Performance](https://bivol.xyz/en/email-verification/syntax-email-validation-nodejs)
+- **Category:** email-verification
+- **Summary:** Master syntax email validation in Node.js using RFC 5322 compliant logic, fast regex patterns, and zero-dependency input parsing.
+- **Target Keyword:** syntax email validation nodejs
+- **Published:** 2026-07-23
+
+### [SMTP Handshake Email Verification: Technical Deep Dive & RFC Protocols](https://bivol.xyz/en/email-verification/smtp-handshake-email-verification)
+- **Category:** email-verification
+- **Summary:** Explore the internal protocols of SMTP handshake email verification, including EHLO, MAIL FROM, and RCPT TO socket probes without dispatching mail.
+- **Target Keyword:** smtp handshake email verification
+- **Published:** 2026-07-24
+
+### [How to Verify Shopify Customer Emails & Prevent Fake Orders in 2026](https://bivol.xyz/en/email-verification/shopify-guide)
+- **Category:** email-verification
+- **Summary:** Learn how to validate B2B and DTC customer emails on Shopify store checkout to cut bounce rates, prevent fraudulent orders, and boost deliverability.
+- **Target Keyword:** shopify customer email verification
+- **Published:** 2026-07-30
+
+### [Building a Real Time Email Verification API Architecture in 2026](https://bivol.xyz/en/email-verification/real-time-email-verification-api)
+- **Category:** email-verification
+- **Summary:** Learn how to integrate a real time email verification API into registration forms and SaaS apps to eliminate fake signups and sub-200ms latency.
+- **Target Keyword:** real time email verification api
+- **Published:** 2026-07-30
+
+### [MX Record Email Validation API: DNS Lookup Architecture & SPF/DKIM](https://bivol.xyz/en/email-verification/mx-record-email-validation-api)
+- **Category:** email-verification
+- **Summary:** Build a high-throughput MX record email validation API to check Mail Exchange servers, DNS health, and domain routing protocols.
+- **Target Keyword:** mx record email validation API
+- **Published:** 2026-07-21
+
+### [Free Bulk Email Bounce Checker: Audit Your Email List Health](https://bivol.xyz/en/email-verification/free-bulk-email-bounce-checker)
+- **Category:** email-verification
+- **Summary:** Test your list quality with a free bulk email bounce checker to identify bad addresses, syntax errors, and inbox deliverability risks before sending.
+- **Target Keyword:** free bulk email bounce checker
+- **Published:** 2026-07-25
+
+### [Disposable Email Address Blocker API for Web Apps & Signups](https://bivol.xyz/en/email-verification/disposable-email-address-blocker-api)
+- **Category:** email-verification
+- **Summary:** Integrate a real-time disposable email address blocker API to prevent temp-mail signups, bot accounts, and SaaS free-tier abuse.
+- **Target Keyword:** disposable email address blocker api
+- **Published:** 2026-07-26
+
+### [Understanding Catch-All Email Validation & Corporate Firewall Routing](https://bivol.xyz/en/email-verification/catch-all-guide)
+- **Category:** email-verification
+- **Summary:** An in-depth technical analysis of catch-all mail servers, SMTP accept-all behavior, and hybrid validation tactics for B2B lists.
+- **Target Keyword:** catch-all email validation
+- **Published:** 2026-07-28
+
+### [Catch All Email Verification Tool: Solving the Accept-All Dilemma](https://bivol.xyz/en/email-verification/catch-all-email-verification-tool)
+- **Category:** email-verification
+- **Summary:** Learn how a specialized catch all email verification tool uses hybrid audits to recover up to 35% of unverifiable B2B business leads safely.
+- **Target Keyword:** catch all email verification tool
+- **Published:** 2026-07-27
+
+### [Bulk Email Verifier for Cold Outreach: Complete Guide & Benchmarks](https://bivol.xyz/en/email-verification/bulk-email-verifier-for-cold-outreach)
+- **Category:** email-verification
+- **Summary:** Learn how to use a high-capacity bulk email verifier for cold outreach to clean CSV lists, protect domain health, and achieve 99% deliverability.
+- **Target Keyword:** bulk email verifier for cold outreach
+- **Published:** 2026-07-28
+
+### [Enterprise B2B Email Validation Service Architecture & List Hygiene](https://bivol.xyz/en/email-verification/b2b-email-validation-service)
+- **Category:** email-verification
+- **Summary:** Discover how enterprise B2B email validation services handle corporate firewalls, catch-all domains, and domain reputation for sales outreach.
+- **Target Keyword:** b2b email validation service
+- **Published:** 2026-07-29
+

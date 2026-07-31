@@ -1,0 +1,279 @@
+{
+  "zero-bounce": {
+    "name": "zero-bounce",
+    "count": 1,
+    "posts": [
+      "zero-bounce-rate-email-verification"
+    ]
+  },
+  "deliverability": {
+    "name": "deliverability",
+    "count": 2,
+    "posts": [
+      "zero-bounce-rate-email-verification",
+      "bulk-email-verifier-for-cold-outreach"
+    ]
+  },
+  "sender-reputation": {
+    "name": "sender-reputation",
+    "count": 1,
+    "posts": [
+      "zero-bounce-rate-email-verification"
+    ]
+  },
+  "domain-health": {
+    "name": "domain-health",
+    "count": 1,
+    "posts": [
+      "zero-bounce-rate-email-verification"
+    ]
+  },
+  "nodejs": {
+    "name": "nodejs",
+    "count": 1,
+    "posts": [
+      "syntax-email-validation-nodejs"
+    ]
+  },
+  "syntax-validation": {
+    "name": "syntax-validation",
+    "count": 1,
+    "posts": [
+      "syntax-email-validation-nodejs"
+    ]
+  },
+  "javascript": {
+    "name": "javascript",
+    "count": 1,
+    "posts": [
+      "syntax-email-validation-nodejs"
+    ]
+  },
+  "rfc-5322": {
+    "name": "rfc-5322",
+    "count": 1,
+    "posts": [
+      "syntax-email-validation-nodejs"
+    ]
+  },
+  "smtp": {
+    "name": "smtp",
+    "count": 2,
+    "posts": [
+      "smtp-handshake-email-verification",
+      "catch-all-guide"
+    ]
+  },
+  "network-protocols": {
+    "name": "network-protocols",
+    "count": 1,
+    "posts": [
+      "smtp-handshake-email-verification"
+    ]
+  },
+  "socket-verification": {
+    "name": "socket-verification",
+    "count": 1,
+    "posts": [
+      "smtp-handshake-email-verification"
+    ]
+  },
+  "rfc-5321": {
+    "name": "rfc-5321",
+    "count": 1,
+    "posts": [
+      "smtp-handshake-email-verification"
+    ]
+  },
+  "shopify": {
+    "name": "shopify",
+    "count": 1,
+    "posts": [
+      "shopify-guide"
+    ]
+  },
+  "email-validation": {
+    "name": "email-validation",
+    "count": 4,
+    "posts": [
+      "shopify-guide",
+      "real-time-email-verification-api",
+      "catch-all-guide",
+      "b2b-email-validation-service"
+    ]
+  },
+  "ecommerce": {
+    "name": "ecommerce",
+    "count": 1,
+    "posts": [
+      "shopify-guide"
+    ]
+  },
+  "cold-outreach": {
+    "name": "cold-outreach",
+    "count": 3,
+    "posts": [
+      "shopify-guide",
+      "bulk-email-verifier-for-cold-outreach",
+      "b2b-email-validation-service"
+    ]
+  },
+  "b2b": {
+    "name": "b2b",
+    "count": 3,
+    "posts": [
+      "shopify-guide",
+      "catch-all-guide",
+      "b2b-email-validation-service"
+    ]
+  },
+  "email-api": {
+    "name": "email-api",
+    "count": 2,
+    "posts": [
+      "real-time-email-verification-api",
+      "mx-record-email-validation-api"
+    ]
+  },
+  "real-time": {
+    "name": "real-time",
+    "count": 1,
+    "posts": [
+      "real-time-email-verification-api"
+    ]
+  },
+  "saas": {
+    "name": "saas",
+    "count": 1,
+    "posts": [
+      "real-time-email-verification-api"
+    ]
+  },
+  "mx-records": {
+    "name": "mx-records",
+    "count": 1,
+    "posts": [
+      "mx-record-email-validation-api"
+    ]
+  },
+  "dns": {
+    "name": "dns",
+    "count": 1,
+    "posts": [
+      "mx-record-email-validation-api"
+    ]
+  },
+  "domain-validation": {
+    "name": "domain-validation",
+    "count": 1,
+    "posts": [
+      "mx-record-email-validation-api"
+    ]
+  },
+  "bounce-checker": {
+    "name": "bounce-checker",
+    "count": 1,
+    "posts": [
+      "free-bulk-email-bounce-checker"
+    ]
+  },
+  "email-health": {
+    "name": "email-health",
+    "count": 1,
+    "posts": [
+      "free-bulk-email-bounce-checker"
+    ]
+  },
+  "free-tool": {
+    "name": "free-tool",
+    "count": 1,
+    "posts": [
+      "free-bulk-email-bounce-checker"
+    ]
+  },
+  "list-audit": {
+    "name": "list-audit",
+    "count": 1,
+    "posts": [
+      "free-bulk-email-bounce-checker"
+    ]
+  },
+  "disposable-email": {
+    "name": "disposable-email",
+    "count": 1,
+    "posts": [
+      "disposable-email-address-blocker-api"
+    ]
+  },
+  "blocker-api": {
+    "name": "blocker-api",
+    "count": 1,
+    "posts": [
+      "disposable-email-address-blocker-api"
+    ]
+  },
+  "fraud-prevention": {
+    "name": "fraud-prevention",
+    "count": 1,
+    "posts": [
+      "disposable-email-address-blocker-api"
+    ]
+  },
+  "security": {
+    "name": "security",
+    "count": 1,
+    "posts": [
+      "disposable-email-address-blocker-api"
+    ]
+  },
+  "catch-all": {
+    "name": "catch-all",
+    "count": 2,
+    "posts": [
+      "catch-all-guide",
+      "catch-all-email-verification-tool"
+    ]
+  },
+  "accept-all": {
+    "name": "accept-all",
+    "count": 1,
+    "posts": [
+      "catch-all-email-verification-tool"
+    ]
+  },
+  "b2b-leads": {
+    "name": "b2b-leads",
+    "count": 1,
+    "posts": [
+      "catch-all-email-verification-tool"
+    ]
+  },
+  "hybrid-audit": {
+    "name": "hybrid-audit",
+    "count": 1,
+    "posts": [
+      "catch-all-email-verification-tool"
+    ]
+  },
+  "bulk-verifier": {
+    "name": "bulk-verifier",
+    "count": 1,
+    "posts": [
+      "bulk-email-verifier-for-cold-outreach"
+    ]
+  },
+  "lead-generation": {
+    "name": "lead-generation",
+    "count": 1,
+    "posts": [
+      "bulk-email-verifier-for-cold-outreach"
+    ]
+  },
+  "list-hygiene": {
+    "name": "list-hygiene",
+    "count": 1,
+    "posts": [
+      "b2b-email-validation-service"
+    ]
+  }
+}

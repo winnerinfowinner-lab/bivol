@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Bivol Technical Guides & Email Deliverability</title>
+  <link>https://bivol.xyz</link>
+  <description>In-depth engineering documentation on SMTP, DNS authentication, and validation frameworks.</description>
+  <language>en-us</language>
+  <atom:link href="https://bivol.xyz/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title><![CDATA[How to Verify Shopify Customer Emails & Prevent Fake Orders in 2026]]></title>
+    <link>https://bivol.xyz/en/email-verification/shopify-guide</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/shopify-guide</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn how to validate B2B and DTC customer emails on Shopify store checkout to cut bounce rates, prevent fraudulent orders, and boost deliverability.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Building a Real Time Email Verification API Architecture in 2026]]></title>
+    <link>https://bivol.xyz/en/email-verification/real-time-email-verification-api</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/real-time-email-verification-api</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn how to integrate a real time email verification API into registration forms and SaaS apps to eliminate fake signups and sub-200ms latency.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Enterprise B2B Email Validation Service Architecture & List Hygiene]]></title>
+    <link>https://bivol.xyz/en/email-verification/b2b-email-validation-service</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/b2b-email-validation-service</guid>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Discover how enterprise B2B email validation services handle corporate firewalls, catch-all domains, and domain reputation for sales outreach.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Understanding Catch-All Email Validation & Corporate Firewall Routing]]></title>
+    <link>https://bivol.xyz/en/email-verification/catch-all-guide</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/catch-all-guide</guid>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[An in-depth technical analysis of catch-all mail servers, SMTP accept-all behavior, and hybrid validation tactics for B2B lists.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Bulk Email Verifier for Cold Outreach: Complete Guide & Benchmarks]]></title>
+    <link>https://bivol.xyz/en/email-verification/bulk-email-verifier-for-cold-outreach</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/bulk-email-verifier-for-cold-outreach</guid>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn how to use a high-capacity bulk email verifier for cold outreach to clean CSV lists, protect domain health, and achieve 99% deliverability.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Catch All Email Verification Tool: Solving the Accept-All Dilemma]]></title>
+    <link>https://bivol.xyz/en/email-verification/catch-all-email-verification-tool</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/catch-all-email-verification-tool</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn how a specialized catch all email verification tool uses hybrid audits to recover up to 35% of unverifiable B2B business leads safely.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Disposable Email Address Blocker API for Web Apps & Signups]]></title>
+    <link>https://bivol.xyz/en/email-verification/disposable-email-address-blocker-api</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/disposable-email-address-blocker-api</guid>
+    <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Integrate a real-time disposable email address blocker API to prevent temp-mail signups, bot accounts, and SaaS free-tier abuse.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Free Bulk Email Bounce Checker: Audit Your Email List Health]]></title>
+    <link>https://bivol.xyz/en/email-verification/free-bulk-email-bounce-checker</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/free-bulk-email-bounce-checker</guid>
+    <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Test your list quality with a free bulk email bounce checker to identify bad addresses, syntax errors, and inbox deliverability risks before sending.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[SMTP Handshake Email Verification: Technical Deep Dive & RFC Protocols]]></title>
+    <link>https://bivol.xyz/en/email-verification/smtp-handshake-email-verification</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/smtp-handshake-email-verification</guid>
+    <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Explore the internal protocols of SMTP handshake email verification, including EHLO, MAIL FROM, and RCPT TO socket probes without dispatching mail.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Syntax Email Validation in Node.js: RFC Standards & Performance]]></title>
+    <link>https://bivol.xyz/en/email-verification/syntax-email-validation-nodejs</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/syntax-email-validation-nodejs</guid>
+    <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Master syntax email validation in Node.js using RFC 5322 compliant logic, fast regex patterns, and zero-dependency input parsing.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Zero Bounce Rate Email Verification: Strategies for 99%+ Deliverability]]></title>
+    <link>https://bivol.xyz/en/email-verification/zero-bounce-rate-email-verification</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/zero-bounce-rate-email-verification</guid>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Achieve zero bounce rate email verification with multi-tier list cleaning, aggressive safety thresholds, and domain reputation protection.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[MX Record Email Validation API: DNS Lookup Architecture & SPF/DKIM]]></title>
+    <link>https://bivol.xyz/en/email-verification/mx-record-email-validation-api</link>
+    <guid isPermaLink="true">https://bivol.xyz/en/email-verification/mx-record-email-validation-api</guid>
+    <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Build a high-throughput MX record email validation API to check Mail Exchange servers, DNS health, and domain routing protocols.]]></description>
+  </item>
+</channel>
+</rss>
