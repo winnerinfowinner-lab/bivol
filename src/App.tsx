@@ -593,8 +593,8 @@ export default function App() {
 
   // محرك جلب المقالات المولّدة من الـ Manifest
   useEffect(() => {
-    // جلب ملف الـ Manifest الذي ولده محرك الـ SEO برمجياً
-    fetch('/content-manifest.json') 
+    // تصحيح المسار: Cloudflare/Vite يضع الملف داخل assets
+    fetch('/assets/content-manifest.json') 
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load content manifest');
         return res.json();
