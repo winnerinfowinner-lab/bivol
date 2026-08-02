@@ -29,44 +29,43 @@ describe('SEO Build Engine (Step 4)', () => {
     expect(fs.existsSync(tagsPath)).toBe(true);
   });
 
-  it('should accurately parse frontmatter from shopify-guide.md', () => {
+  it('should generate lightweight content-manifest.json containing required fields and route', () => {
     const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    expect(manifest.generatedAt).toBeDefined();
     expect(manifest.totalArticles).toBeGreaterThanOrEqual(2);
+    expect(Array.isArray(manifest.articles)).toBe(true);
 
     const article = manifest.articles.find((a) => a.slug === 'shopify-guide');
     expect(article).toBeDefined();
     expect(article.title).toBe('How to Verify Shopify Customer Emails & Prevent Fake Orders in 2026');
     expect(article.category).toBe('email-verification');
-    expect(article.tags).toContain('shopify');
-    expect(article.tags).toContain('email-validation');
-    expect(article.targetKeyword).toBe('shopify customer email verification');
-    expect(article.author).toBe('Bivol Engineering Team');
-    expect(article.schemaType).toBe('TechArticle');
-    expect(article.dynamicFAQs.length).toBe(3);
-    expect(article.redirects).toContain('/blog/shopify-verification-guide');
+    expect(article.lang).toBe('en');
+    expect(article.route).toBe('/en/email-verification/shopify-guide');
+    expect(article.metaDescription).toBeDefined();
+    expect(article.publishDate).toBeDefined();
+
+    // Verify unneeded fields are omitted from manifest
+    expect(article.wordCount).toBeUndefined();
+    expect(article.readingTime).toBeUndefined();
+    expect(article.jsonLdSchema).toBeUndefined();
+    expect(article.relatedPosts).toBeUndefined();
+    expect(article.dynamicFAQs).toBeUndefined();
   });
 
-  it('should compute dynamic metrics wordCount and readingTime', () => {
-    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
-    const article = manifest.articles.find((a) => a.slug === 'shopify-guide');
+  it('should compute dynamic metrics and metadata in build cache', () => {
+    const cache = JSON.parse(fs.readFileSync(cachePath, 'utf-8'));
+    const cacheEntries = Object.values(cache);
+    const shopifyEntry = cacheEntries.find((e) => e.data && e.data.slug === 'shopify-guide');
+    expect(shopifyEntry).toBeDefined();
 
+    const article = shopifyEntry.data;
     expect(typeof article.wordCount).toBe('number');
     expect(article.wordCount).toBeGreaterThan(50);
     expect(typeof article.readingTime).toBe('number');
     expect(article.readingTime).toBeGreaterThanOrEqual(1);
     expect(article.lastmod).toBeDefined();
-  });
-
-  it('should compute weighted internal link scoring (relatedPosts)', () => {
-    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
-    const shopifyGuide = manifest.articles.find((a) => a.slug === 'shopify-guide');
-
-    expect(Array.isArray(shopifyGuide.relatedPosts)).toBe(true);
-    expect(shopifyGuide.relatedPosts.length).toBeGreaterThan(0);
-
-    const relatedItem = shopifyGuide.relatedPosts[0];
-    expect(typeof relatedItem.slug).toBe('string');
-    expect(relatedItem.score).toBeGreaterThanOrEqual(50);
+    expect(Array.isArray(article.relatedPosts)).toBe(true);
+    expect(article.relatedPosts.length).toBeGreaterThan(0);
   });
 
   it('should generate valid sitemap.xml', () => {

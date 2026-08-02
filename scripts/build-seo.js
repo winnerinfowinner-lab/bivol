@@ -424,10 +424,20 @@ export function buildSEOEngine() {
   fs.writeFileSync(CACHE_FILE, JSON.stringify(updatedCache, null, 2), 'utf-8');
 
   // 1. Generate Global Manifest: public/content-manifest.json
+  const manifestArticles = articles.map((article) => ({
+    slug: article.slug,
+    title: article.title,
+    metaDescription: article.metaDescription,
+    publishDate: article.publishDate,
+    category: article.category,
+    lang: article.lang,
+    route: `/${article.lang}/${article.category}/${article.slug}`,
+  }));
+
   const manifest = {
     generatedAt: new Date().toISOString(),
     totalArticles: articles.length,
-    articles,
+    articles: manifestArticles,
   };
   fs.writeFileSync(
     path.join(PUBLIC_DIR, 'content-manifest.json'),
