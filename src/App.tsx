@@ -15,6 +15,7 @@ import CatchAllEmailGuide from './components/CatchAllEmailGuide';
 import BivolVsAutomatedTools from './components/BivolVsAutomatedTools';
 import ArticlePage from './components/ArticlePage';
 import ArticlesIndex from './components/ArticlesIndex';
+import NotFoundPage from './components/NotFoundPage';
 import { 
   ShieldCheck, 
   Users, 
@@ -574,6 +575,7 @@ export default function App() {
           />
           <Route path="/articles" element={<ArticlesIndex />} />
           <Route path="/:lang/:category/:slug" element={<ArticlePage />} />
+          <Route path="/:lang/:category" element={<NotFoundPage />} />
           <Route path="/blog/:slug" element={<ArticlePage />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/email-verification-guide" element={<EmailVerificationGuide />} />
@@ -582,6 +584,7 @@ export default function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
     </Router>
