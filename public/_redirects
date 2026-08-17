@@ -1,3 +1,8 @@
+# --- 1. Static Files Override (مستثنيات الملفات الثابتة - أعلى أولوية) ---
+/sitemap.xml    /sitemap.xml    200!
+/robots.txt     /robots.txt     200!
+
+# --- 2. 301 Redirects (توجيهات المقالات والروابط) ---
 /blog/zero-bounce-rate-email-verification /en/email-verification/zero-bounce-rate-email-verification 301
 /guides/zero-bounce-strategy /en/email-verification/zero-bounce-rate-email-verification 301
 /blog/syntax-email-validation-nodejs /en/email-verification/syntax-email-validation-nodejs 301
@@ -22,3 +27,6 @@
 /guides/bulk-cold-outreach-verifier /en/email-verification/bulk-email-verifier-for-cold-outreach 301
 /blog/b2b-email-validation-service /en/email-verification/b2b-email-validation-service 301
 /guides/enterprise-b2b-validation /en/email-verification/b2b-email-validation-service 301
+
+# --- 3. SPA Fallback (توجيه التطبيق للـ React Router) ---
+/*    /index.html    200
