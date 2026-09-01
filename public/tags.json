@@ -8,10 +8,13 @@
   },
   "deliverability": {
     "name": "deliverability",
-    "count": 2,
+    "count": 5,
     "posts": [
       "zero-bounce-rate-email-verification",
-      "bulk-email-verifier-for-cold-outreach"
+      "spam-trap-email-detector-software",
+      "realtime-mailbox-existence-check",
+      "bulk-email-verifier-for-cold-outreach",
+      "automated-email-list-cleaning-service"
     ]
   },
   "sender-reputation": {
@@ -26,6 +29,34 @@
     "count": 1,
     "posts": [
       "zero-bounce-rate-email-verification"
+    ]
+  },
+  "email-verification": {
+    "name": "email-verification",
+    "count": 1,
+    "posts": [
+      "verify-email-address-without-sending-email"
+    ]
+  },
+  "smtp-handshake": {
+    "name": "smtp-handshake",
+    "count": 1,
+    "posts": [
+      "verify-email-address-without-sending-email"
+    ]
+  },
+  "dns-mx": {
+    "name": "dns-mx",
+    "count": 1,
+    "posts": [
+      "verify-email-address-without-sending-email"
+    ]
+  },
+  "silent-validation": {
+    "name": "silent-validation",
+    "count": 1,
+    "posts": [
+      "verify-email-address-without-sending-email"
     ]
   },
   "nodejs": {
@@ -54,6 +85,29 @@
     "count": 1,
     "posts": [
       "syntax-email-validation-nodejs"
+    ]
+  },
+  "spam-trap": {
+    "name": "spam-trap",
+    "count": 1,
+    "posts": [
+      "spam-trap-email-detector-software"
+    ]
+  },
+  "email-deliverability": {
+    "name": "email-deliverability",
+    "count": 2,
+    "posts": [
+      "spam-trap-email-detector-software",
+      "high-volume-email-verifier-for-enterprise"
+    ]
+  },
+  "list-cleaning": {
+    "name": "list-cleaning",
+    "count": 2,
+    "posts": [
+      "spam-trap-email-detector-software",
+      "role-based-email-address-filter"
     ]
   },
   "smtp": {
@@ -94,10 +148,11 @@
   },
   "email-validation": {
     "name": "email-validation",
-    "count": 4,
+    "count": 5,
     "posts": [
       "shopify-guide",
       "real-time-email-verification-api",
+      "cloud-email-validation-service",
       "catch-all-guide",
       "b2b-email-validation-service"
     ]
@@ -127,12 +182,55 @@
       "b2b-email-validation-service"
     ]
   },
+  "role-based-email": {
+    "name": "role-based-email",
+    "count": 1,
+    "posts": [
+      "role-based-email-address-filter"
+    ]
+  },
+  "email-filter": {
+    "name": "email-filter",
+    "count": 1,
+    "posts": [
+      "role-based-email-address-filter"
+    ]
+  },
+  "outbound-sales": {
+    "name": "outbound-sales",
+    "count": 1,
+    "posts": [
+      "role-based-email-address-filter"
+    ]
+  },
+  "mailbox-check": {
+    "name": "mailbox-check",
+    "count": 1,
+    "posts": [
+      "realtime-mailbox-existence-check"
+    ]
+  },
+  "realtime-verification": {
+    "name": "realtime-verification",
+    "count": 1,
+    "posts": [
+      "realtime-mailbox-existence-check"
+    ]
+  },
+  "smtp-protocol": {
+    "name": "smtp-protocol",
+    "count": 1,
+    "posts": [
+      "realtime-mailbox-existence-check"
+    ]
+  },
   "email-api": {
     "name": "email-api",
-    "count": 2,
+    "count": 3,
     "posts": [
       "real-time-email-verification-api",
-      "mx-record-email-validation-api"
+      "mx-record-email-validation-api",
+      "low-latency-email-verification-api"
     ]
   },
   "real-time": {
@@ -151,9 +249,10 @@
   },
   "mx-records": {
     "name": "mx-records",
-    "count": 1,
+    "count": 2,
     "posts": [
-      "mx-record-email-validation-api"
+      "mx-record-email-validation-api",
+      "invalid-email-lookup-tool"
     ]
   },
   "dns": {
@@ -168,6 +267,69 @@
     "count": 1,
     "posts": [
       "mx-record-email-validation-api"
+    ]
+  },
+  "low-latency": {
+    "name": "low-latency",
+    "count": 1,
+    "posts": [
+      "low-latency-email-verification-api"
+    ]
+  },
+  "form-validation": {
+    "name": "form-validation",
+    "count": 1,
+    "posts": [
+      "low-latency-email-verification-api"
+    ]
+  },
+  "edge-computing": {
+    "name": "edge-computing",
+    "count": 1,
+    "posts": [
+      "low-latency-email-verification-api"
+    ]
+  },
+  "email-lookup": {
+    "name": "email-lookup",
+    "count": 1,
+    "posts": [
+      "invalid-email-lookup-tool"
+    ]
+  },
+  "bounce-diagnostics": {
+    "name": "bounce-diagnostics",
+    "count": 1,
+    "posts": [
+      "invalid-email-lookup-tool"
+    ]
+  },
+  "smtp-codes": {
+    "name": "smtp-codes",
+    "count": 1,
+    "posts": [
+      "invalid-email-lookup-tool"
+    ]
+  },
+  "enterprise-verification": {
+    "name": "enterprise-verification",
+    "count": 1,
+    "posts": [
+      "high-volume-email-verifier-for-enterprise"
+    ]
+  },
+  "high-volume": {
+    "name": "high-volume",
+    "count": 1,
+    "posts": [
+      "high-volume-email-verifier-for-enterprise"
+    ]
+  },
+  "scalable-architecture": {
+    "name": "scalable-architecture",
+    "count": 1,
+    "posts": [
+      "high-volume-email-verifier-for-enterprise"
     ]
   },
   "bounce-checker": {
@@ -226,6 +388,27 @@
       "disposable-email-address-blocker-api"
     ]
   },
+  "cloud-service": {
+    "name": "cloud-service",
+    "count": 1,
+    "posts": [
+      "cloud-email-validation-service"
+    ]
+  },
+  "distributed-systems": {
+    "name": "distributed-systems",
+    "count": 1,
+    "posts": [
+      "cloud-email-validation-service"
+    ]
+  },
+  "list-scrubbing": {
+    "name": "list-scrubbing",
+    "count": 1,
+    "posts": [
+      "cloud-email-validation-service"
+    ]
+  },
   "catch-all": {
     "name": "catch-all",
     "count": 2,
@@ -269,11 +452,60 @@
       "bulk-email-verifier-for-cold-outreach"
     ]
   },
+  "bulk-api": {
+    "name": "bulk-api",
+    "count": 1,
+    "posts": [
+      "bulk-email-list-hygiene-api"
+    ]
+  },
+  "email-hygiene": {
+    "name": "email-hygiene",
+    "count": 1,
+    "posts": [
+      "bulk-email-list-hygiene-api"
+    ]
+  },
+  "asynchronous-processing": {
+    "name": "asynchronous-processing",
+    "count": 1,
+    "posts": [
+      "bulk-email-list-hygiene-api"
+    ]
+  },
+  "webhooks": {
+    "name": "webhooks",
+    "count": 1,
+    "posts": [
+      "bulk-email-list-hygiene-api"
+    ]
+  },
   "list-hygiene": {
     "name": "list-hygiene",
     "count": 1,
     "posts": [
       "b2b-email-validation-service"
+    ]
+  },
+  "automated-cleaning": {
+    "name": "automated-cleaning",
+    "count": 1,
+    "posts": [
+      "automated-email-list-cleaning-service"
+    ]
+  },
+  "email-list-hygiene": {
+    "name": "email-list-hygiene",
+    "count": 1,
+    "posts": [
+      "automated-email-list-cleaning-service"
+    ]
+  },
+  "crm-integration": {
+    "name": "crm-integration",
+    "count": 1,
+    "posts": [
+      "automated-email-list-cleaning-service"
     ]
   }
 }

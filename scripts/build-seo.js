@@ -3,6 +3,7 @@ import path from 'path';
 import crypto from 'crypto';
 import matter from 'gray-matter';
 import { globSync } from 'glob';
+import { generateSitemapXml } from './generate-sitemap.js';
 
 const SITE_URL = 'https://bivol.xyz';
 const SITE_NAME = 'Bivol';
@@ -174,34 +175,10 @@ function computeRelatedPosts(articles) {
 }
 
 /**
- * Generates public/sitemap.xml
+ * Generates public/sitemap.xml using the unified sitemap engine
  */
-function generateSitemap(articles, categoryStats, tagStats) {
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-
-  // Homepage
-  xml += `  <url>\n    <loc>${SITE_URL}/</loc>\n    <priority>1.0</priority>\n  </url>\n`;
-
-  // Article pages
-  for (const article of articles) {
-    const url = `${SITE_URL}/${article.lang}/${article.category}/${article.slug}`;
-    const lastmod = article.lastmod ? article.lastmod.split('T')[0] : article.publishDate;
-    xml += `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <priority>0.9</priority>\n  </url>\n`;
-  }
-
-  // Category pages
-  for (const cat of Object.keys(categoryStats)) {
-    xml += `  <url>\n    <loc>${SITE_URL}/en/${cat}</loc>\n    <priority>0.8</priority>\n  </url>\n`;
-  }
-
-  // Tag pages
-  for (const tag of Object.keys(tagStats)) {
-    xml += `  <url>\n    <loc>${SITE_URL}/en/tag/${tag}</loc>\n    <priority>0.7</priority>\n  </url>\n`;
-  }
-
-  xml += '</urlset>';
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), xml, 'utf-8');
+function generateSitemap() {
+  generateSitemapXml();
 }
 
 /**
@@ -460,7 +437,7 @@ export function buildSEOEngine() {
   );
 
   // 4. Generate pre-built SEO artifacts
-  generateSitemap(articles, categoryStats, tagStats);
+  generateSitemap();
   generateRssFeed(articles);
   generateRobotsTxt();
   generateLlmsTxt(articles);

@@ -1,20 +1,30 @@
 {
   "email-verification": {
     "name": "email-verification",
-    "count": 12,
+    "count": 22,
     "posts": [
       "zero-bounce-rate-email-verification",
+      "verify-email-address-without-sending-email",
       "syntax-email-validation-nodejs",
+      "spam-trap-email-detector-software",
       "smtp-handshake-email-verification",
       "shopify-guide",
+      "role-based-email-address-filter",
+      "realtime-mailbox-existence-check",
       "real-time-email-verification-api",
       "mx-record-email-validation-api",
+      "low-latency-email-verification-api",
+      "invalid-email-lookup-tool",
+      "high-volume-email-verifier-for-enterprise",
       "free-bulk-email-bounce-checker",
       "disposable-email-address-blocker-api",
+      "cloud-email-validation-service",
       "catch-all-guide",
       "catch-all-email-verification-tool",
       "bulk-email-verifier-for-cold-outreach",
-      "b2b-email-validation-service"
+      "bulk-email-list-hygiene-api",
+      "b2b-email-validation-service",
+      "automated-email-list-cleaning-service"
     ]
   }
 }

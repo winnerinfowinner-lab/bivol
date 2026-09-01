@@ -5,63 +5,145 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://bivol.xyz/articles</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/faq</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/email-verification-guide</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/catch-all-email-guide</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/bivol-vs-automated-tools</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/privacy</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/terms</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/disclaimer</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://bivol.xyz/en/email-verification/zero-bounce-rate-email-verification</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/verify-email-address-without-sending-email</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/syntax-email-validation-nodejs</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/spam-trap-email-detector-software</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/smtp-handshake-email-verification</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/shopify-guide</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/role-based-email-address-filter</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/realtime-mailbox-existence-check</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/real-time-email-verification-api</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/mx-record-email-validation-api</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/low-latency-email-verification-api</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/invalid-email-lookup-tool</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/high-volume-email-verifier-for-enterprise</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/free-bulk-email-bounce-checker</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/disposable-email-address-blocker-api</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/cloud-email-validation-service</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/catch-all-guide</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/catch-all-email-verification-tool</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/bulk-email-verifier-for-cold-outreach</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/bulk-email-list-hygiene-api</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bivol.xyz/en/email-verification/b2b-email-validation-service</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/email-verification/automated-email-list-cleaning-service</loc>
+    <lastmod>2026-08-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -85,6 +167,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bivol.xyz/en/tag/email-verification</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/smtp-handshake</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/dns-mx</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/silent-validation</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bivol.xyz/en/tag/nodejs</loc>
     <priority>0.7</priority>
   </url>
@@ -98,6 +196,18 @@
   </url>
   <url>
     <loc>https://bivol.xyz/en/tag/rfc-5322</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/spam-trap</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/email-deliverability</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/list-cleaning</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -137,6 +247,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bivol.xyz/en/tag/role-based-email</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/email-filter</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/outbound-sales</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/mailbox-check</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/realtime-verification</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/smtp-protocol</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bivol.xyz/en/tag/email-api</loc>
     <priority>0.7</priority>
   </url>
@@ -158,6 +292,42 @@
   </url>
   <url>
     <loc>https://bivol.xyz/en/tag/domain-validation</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/low-latency</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/form-validation</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/edge-computing</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/email-lookup</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/bounce-diagnostics</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/smtp-codes</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/enterprise-verification</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/high-volume</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/scalable-architecture</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -193,6 +363,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bivol.xyz/en/tag/cloud-service</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/distributed-systems</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/list-scrubbing</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bivol.xyz/en/tag/catch-all</loc>
     <priority>0.7</priority>
   </url>
@@ -217,7 +399,35 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bivol.xyz/en/tag/bulk-api</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/email-hygiene</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/asynchronous-processing</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/webhooks</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bivol.xyz/en/tag/list-hygiene</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/automated-cleaning</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/email-list-hygiene</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bivol.xyz/en/tag/crm-integration</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
